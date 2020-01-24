@@ -44,6 +44,33 @@ class LogInViewController: UIViewController {
            view.window?.makeKeyAndVisible()
        }
     
+    func validateFields() -> String? {
+        
+        //Check that all fields are actually filled in
+        
+        if usernameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
+            return "Please fill in all the fields"
+        }
+        
+        let cleanedEmail = usernameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if isValidEmail(cleanedEmail) == false {
+            return "Please enter a valid email address"
+        }
+        return nil;
+    }
+    
+
+    //Check if the email is in the proper format
+    
+    func isValidEmail(_ email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: email)
+    }
+    
     
     @IBAction func loginButtonTapped(_ sender: Any) {
         

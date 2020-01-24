@@ -90,6 +90,7 @@
 		DC0DE4C723D96611004818CF /* FRC App */ = {
 			isa = PBXGroup;
 			children = (
+				DC792E4A23DAB74600F961D7 /* Media */,
 				DCDF180123DA50D100F57841 /* Helpers */,
 				DC0DE4E223D966D6004818CF /* View Controllers */,
 				DC0DE4C823D96611004818CF /* AppDelegate.swift */,
@@ -112,6 +113,13 @@
 				DC0DE4E023D9668A004818CF /* HomeViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DC792E4A23DAB74600F961D7 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 		DCDF180123DA50D100F57841 /* Helpers */ = {
