@@ -80,9 +80,9 @@ class LogInViewController: UIViewController {
             let gradientLayer = CAGradientLayer()
             
             //define colors
-        gradientLayer.colors = [UIColor.white.cgColor,UIColor.blue.cgColor, UIColor.blue.cgColor]
+        gradientLayer.colors = [UIColor.white.cgColor, UIColor.black.cgColor]
             
-        gradientLayer.locations = [0, 0.6, 0.8]
+        gradientLayer.locations = [0, 0.8]
         
             //define frame
             gradientLayer.frame = view.bounds
