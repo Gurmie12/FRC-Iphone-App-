@@ -18,6 +18,10 @@
 		DC0DE4DF23D9667F004818CF /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DE4DE23D9667F004818CF /* LogInViewController.swift */; };
 		DC0DE4E123D9668A004818CF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DE4E023D9668A004818CF /* HomeViewController.swift */; };
 		DC0DE4E423D9726F004818CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC0DE4E323D9726F004818CF /* GoogleService-Info.plist */; };
+		DC8C38A623DD2CF8004D3356 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8C38A523DD2CF8004D3356 /* MainTabController.swift */; };
+		DC8C38AC23DEA772004D3356 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8C38AB23DEA772004D3356 /* EventCell.swift */; };
+		DC8C38AE23DEA9B0004D3356 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8C38AD23DEA9B0004D3356 /* Event.swift */; };
+		DC8C38B023DEAA53004D3356 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8C38AF23DEAA53004D3356 /* EventViewController.swift */; };
 		DCDF180323DA50F100F57841 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF180223DA50F100F57841 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +41,10 @@
 		DC0DE4DE23D9667F004818CF /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		DC0DE4E023D9668A004818CF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DC0DE4E323D9726F004818CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DC8C38A523DD2CF8004D3356 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		DC8C38AB23DEA772004D3356 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		DC8C38AD23DEA9B0004D3356 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		DC8C38AF23DEAA53004D3356 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		DCDF180223DA50F100F57841 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,10 +115,9 @@
 		DC0DE4E223D966D6004818CF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DC0DE4CC23D96611004818CF /* ViewController.swift */,
-				DC0DE4DC23D9666E004818CF /* SignUpViewController.swift */,
-				DC0DE4DE23D9667F004818CF /* LogInViewController.swift */,
-				DC0DE4E023D9668A004818CF /* HomeViewController.swift */,
+				DC8C38B323DEBA49004D3356 /* Cells */,
+				DC8C38B223DEBA30004D3356 /* Custom Classes */,
+				DC8C38B123DEBA19004D3356 /* Views */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -120,6 +127,35 @@
 			children = (
 			);
 			path = Media;
+			sourceTree = "<group>";
+		};
+		DC8C38B123DEBA19004D3356 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC0DE4DC23D9666E004818CF /* SignUpViewController.swift */,
+				DC0DE4CC23D96611004818CF /* ViewController.swift */,
+				DC0DE4DE23D9667F004818CF /* LogInViewController.swift */,
+				DC0DE4E023D9668A004818CF /* HomeViewController.swift */,
+				DC8C38A523DD2CF8004D3356 /* MainTabController.swift */,
+				DC8C38AF23DEAA53004D3356 /* EventViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC8C38B223DEBA30004D3356 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DC8C38AD23DEA9B0004D3356 /* Event.swift */,
+			);
+			path = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		DC8C38B323DEBA49004D3356 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DC8C38AB23DEA772004D3356 /* EventCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		DCDF180123DA50D100F57841 /* Helpers */ = {
@@ -247,7 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC0DE4CD23D96611004818CF /* ViewController.swift in Sources */,
+				DC8C38B023DEAA53004D3356 /* EventViewController.swift in Sources */,
+				DC8C38AC23DEA772004D3356 /* EventCell.swift in Sources */,
 				DC0DE4C923D96611004818CF /* AppDelegate.swift in Sources */,
+				DC8C38A623DD2CF8004D3356 /* MainTabController.swift in Sources */,
+				DC8C38AE23DEA9B0004D3356 /* Event.swift in Sources */,
 				DC0DE4DD23D9666E004818CF /* SignUpViewController.swift in Sources */,
 				DC0DE4DF23D9667F004818CF /* LogInViewController.swift in Sources */,
 				DCDF180323DA50F100F57841 /* Constants.swift in Sources */,

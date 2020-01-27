@@ -16,8 +16,6 @@ class ViewController: UIViewController {
     
     
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         addGradientToView(view: self.view)
@@ -26,6 +24,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+ 
     
     func touchButtonStyling(button: UIButton){
         button.backgroundColor = UIColor.lightGray
